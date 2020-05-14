@@ -63,7 +63,7 @@
                             <form name="contactForm" class="customform" method="post" enctype="multipart/form-data" action="pengajuan_proses.php">
                                 <div class="s-12" hidden>
                                     <label>Jenis Surat</label>
-                                    <input name="surat" placeholder="Nik" type="text" />
+                                    <input name="surat" placeholder="Nik" type="text" value="<?php echo "$surat[id_jenis_surat]"; ?>" />
                                 </div>
                                 <div class="s-12">
                                     <label>Nik</label>
