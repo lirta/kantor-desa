@@ -81,9 +81,18 @@ if (
                             <td>
                               <?php
                               $hasils = mysqli_query($koneksi, "SELECT * FROM syarat WHERE id_jenis_surat='$surat[id_jenis_surat]' ");
-                              while ($syarat = mysqli_fetch_assoc($hasils)) {
-                                echo "<li>$syarat[syarat]  <a href='syarat_hapus.php?id=$syarat[id_syarat]' class='btn btn-danger btn-xs' >X</a> </li> ";
-                              }
+                              while ($syarat = mysqli_fetch_assoc($hasils)) { ?>
+                                <!-- echo "<li>$syarat[syarat] <a href='syarat_hapus.php?id=$syarat[id_syarat]' class='btn btn-danger btn-xs'>X</a> </li> "; -->
+                                <table id="example1" class="table table-bordered table-striped">
+
+                                  <body>
+                                    <tr>
+                                      <td><?php echo "$syarat[syarat]"; ?></td>
+                                      <td width="30xp"><?php echo "<a href='syarat_hapus.php?id=$syarat[id_syarat]' class='btn btn-danger btn-xs' >X</a>"; ?></td>
+                                    </tr>
+                                  </body>
+                                </table>
+                              <?php }
                               echo "<br><a href='syarat_ad.php?id=$surat[id_jenis_surat]' class='btn btn-primary btn-sm'>tambah</a>  
                             <a href='syarat_edit.php?id=$surat[id_jenis_surat]' target='blang' class='btn btn-warning btn-sm'>Edit</a>";
                               ?>
