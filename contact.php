@@ -51,7 +51,7 @@
             <div class="section background-white">
                 <div class="line margin-bottom-60">
                     <div class="margin">
-                        <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <div class="s-12 m-12 l-6 margin-m-bottom">
                             <div class="padding-2x block-bordered border-radius">
                                 <div class="float-left hide-s">
                                     <i class="icon-sli-location-pin icon3x text-primary"></i>
@@ -77,13 +77,13 @@
                                 </div>
                             </div>
                         </div> -->
-                        <div class="s-12 m-12 l-4 margin-m-bottom">
+                        <div class="s-12 m-12 l-6 margin-m-bottom">
                             <div class="padding-2x block-bordered border-radius">
                                 <div class="float-left hide-s">
                                     <i class="icon-sli-phone icon3x text-primary"></i>
                                 </div>
                                 <div class="margin-left-70 margin-s-left-0">
-                                    <h3 class="margin-bottom-0">Kontak persen</h3>
+                                    <h3 class="margin-bottom-0">Kontak person</h3>
                                     <p><span class="text-primary">081372213356</span><br>
 
                                     </p>

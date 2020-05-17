@@ -38,7 +38,7 @@
                      <i class="icon-sli-phone text-primary icon3x"></i>
                  </div>
                  <div class="margin-left-70">
-                     <h3 class="margin-bottom-0">Kontak persen</h3>
+                     <h3 class="margin-bottom-0">Kontak person</h3>
                      <p>081372213356 </p>
                  </div>
              </div>
