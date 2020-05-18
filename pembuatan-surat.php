@@ -73,14 +73,16 @@
                                 </ul>
                             </p>
                             <hr>
-                            <div class="s-6 m-6 l-12 margin-m-bottom">
-                                <div class="padding-1x background-primary">
-                                    <?php
-                                    if ($jml > 0) {
-                                        echo "<a class='button button-white-stroke text-size-18' href='pengajuan.php?id=$surat[id_jenis_surat]'>Pengajuan</a>";
-                                    } ?>
-                                </div>
-                            </div>
+                            <!-- <div class="s-6 m-6 l-12 margin-m-bottom">
+                                <div class="padding-1x background-primary"> -->
+                            <?php
+                            if ($jml > 0) {
+                                echo "
+                                        <div ><button class='s-12 submit-form button background-primary text-white' ><a class='button button-white-stroke text-size-18' href='pengajuan.php?id=$surat[id_jenis_surat]'>Pengajuan</a></button></div>
+                                        ";
+                            } ?>
+                            <!-- </div>
+                            </div> -->
                             <hr>
                         <?php } ?>
                     </div>
