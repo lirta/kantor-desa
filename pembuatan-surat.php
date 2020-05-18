@@ -60,19 +60,27 @@
                         include 'assets/coneksi/config.php';
                         $qsurat = mysqli_query($koneksi, "SELECT * FROM jenis_surat ");
                         while ($surat = mysqli_fetch_assoc($qsurat)) { ?>
-                            <h2 class="text-thin text-center text-primary"><?php echo "$surat[nama_surat]"; ?></h2>
+                            <h2 class="text-thin text-center"><?php echo "$surat[nama_surat]"; ?></h2>
                             <hr>
                             <p class="margin-bottom-30">
                                 <ul>
                                     <?php
                                     $qsyarat = mysqli_query($koneksi, "SELECT * FROM syarat WHERE id_jenis_surat='$surat[id_jenis_surat]' ");
+                                    $jml = mysqli_num_rows($qsyarat);
                                     while ($syarat = mysqli_fetch_assoc($qsyarat)) {
                                         echo "<li>$syarat[syarat]</li>";
                                     } ?>
                                 </ul>
                             </p>
                             <hr>
-                            <?php echo "<div class='button button-primary-stroke text-size-14'><a  href='pengajuan.php?id=$surat[id_jenis_surat]'>Pengajuan</a></div>"; ?>
+                            <div class="s-6 m-6 l-12 margin-m-bottom">
+                                <div class="padding-1x background-primary">
+                                    <?php
+                                    if ($jml > 0) {
+                                        echo "<a class='button button-white-stroke text-size-18' href='pengajuan.php?id=$surat[id_jenis_surat]'>Pengajuan</a>";
+                                    } ?>
+                                </div>
+                            </div>
                             <hr>
                         <?php } ?>
                     </div>
